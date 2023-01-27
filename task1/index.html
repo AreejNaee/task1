@@ -1,0 +1,57 @@
+<!<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>areej | Subway Passenger Counter</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+   
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    
+</head>
+
+<body>
+    <main>
+
+        <div class="container flex">
+            <div class="card">
+                <h1 class="text-center">People entered</h1>
+                <h2 id="count-el" class="text-center">0</h2>
+                <div class="card__buttons">
+                   
+                    <button id="increment-btn" onclick="increment()" class="btn">
+                        <p id="increment-btn" class="text-center">increment </p>
+
+                        
+
+                    </button>
+
+                   
+                    <button id="save-btn" onclick="total(), save()" class="btn"> 
+                        <p id="save-btn" class="text-center">save </p>
+
+
+                    </button>
+                </div>
+
+                
+                <p id="save-el" class="text-center">Previous entries: </p>
+
+                <p class="text-center">Total entries: <span id="total-el"></span> </p>
+
+            </div>
+        </div>
+    </main>
+
+    
+    
+    <script src="index.js"></script>
+</body>
+
+</html>

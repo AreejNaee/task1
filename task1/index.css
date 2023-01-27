@@ -1,0 +1,164 @@
+
+
+
+<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap');
+body {
+
+    background-color: var(--clr-dark-grey);
+    background-size: cover;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+</style>
+
+
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-main);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  margin: 0.5em 0;
+  font-size: 5em;
+  text-align: center;
+}
+
+p {
+  font-family: var(--ff-serif);
+}
+
+footer {
+  padding: 2em;
+}
+
+
+
+
+.container {
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+
+
+
+
+.btn {
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+#increment-btn {
+  border: 2px solid var(--clr-dark-grey);
+}
+
+#increment-btn:hover,
+#increment-btn:focus {
+  background-color: rgba(255, 0, 0, 60%);
+  
+}
+
+#increment-btn:active {
+  -webkit-box-shadow: inset 0px 0px 5px var(--clr-dark-grey);
+  -moz-box-shadow: inset 0px 0px 5px var(--clr-dark-grey);
+  box-shadow: inset 0px 0px 5px var(--clr-dark-grey);
+}
+
+#save-btn {
+  border: 2px solid var(--clr-dark-grey);
+  text-align: center;
+}
+
+#save-btn:hover,
+#save-btn:focus {
+  background-color: rgba(0, 100, 0, 60%);
+  
+}
+
+#save-btn:active {
+  -webkit-box-shadow: inset 0px 0px 5px var(--clr-dark-grey);
+  -moz-box-shadow: inset 0px 0px 5px var(--clr-dark-grey);
+  box-shadow: inset 0px 0px 5px var(--clr-dark-grey);
+}
+
+
+
+.card {
+  max-width: 14rem;
+  padding: 2em;
+  border-radius: 1em;
+  background-color: var(--clr-light-grey);
+  text-align: center;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+}
+
+#save-el {
+  margin-bottom: 1em;
+}
+
+
+
+.attribution {
+  font-family: var(--ff-serif);
+  font-size: 11px;
+  text-align: center;
+  color: var(--clr-light-grey);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+@media (min-width: 719px) {
+  /* more space between buttons on bigger screens */
+  .card {
+    min-width: 25rem;
+  }
+  .card__buttons {
+    justify-content: space-around;
+  }
+}
